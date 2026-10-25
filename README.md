@@ -10,9 +10,11 @@
 ## Запуск
 ```bash
 pip install -r requirements.txt
-export BOT_TOKEN="your_token_from_botfather"
+cp .env.example .env   # и вписать свой токен от @BotFather
 python bot.py
 ```
+
+Токен хранится в `.env`, который игнорируется git. Переменная окружения `BOT_TOKEN` тоже работает.
 
 ## Стек
 - Python 3.11+
